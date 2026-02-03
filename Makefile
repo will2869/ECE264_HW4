@@ -31,7 +31,10 @@ hw4-func1-t : hw4.o func1.o func2.o func3.o func4.o func5.o integrator-hw4-t.o h
 
 testall : hw4-func1-t
 	mkdir -p outputs
-	./hw4-func1-t "testcases/test1" "outputs/hw4-func1-t"
+	./hw4-func1-t "testcases/test1" "outputs/test1.out"
+	./hw4-func1-t "testcases/test2" "outputs/test2.out"
+	./hw4-func1-t "testcases/test3" "outputs/test3.out"
+	./hw4-func1-t "testcases/test4" "outputs/test4.out"
 
 clean:
 	rm -f *.o
